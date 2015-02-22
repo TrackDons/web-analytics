@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Ahoy::Engine => "/ahoy"
+  match '*any' => 'application#options', via: [:options]
 end
